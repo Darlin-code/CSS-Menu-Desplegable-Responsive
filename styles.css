@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-container-1 {
+    background-color: #F8DE7E;
+    position: fixed;
+    box-shadow: 0px 2px 10px black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.whitespace {
+    width: 256px;
+}
+
+.logo-container img {
+    width: 250px;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.user a {
+    width: 135px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 7px;
+}
+
+.user a:hover {
+    color: black;
+    text-decoration: underline 2px white;
+}
+
+.user-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.user-container a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-container-2 {
+    background-color: #F8DE7E;
+    margin-top: 62px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 20px;
+    border-bottom: 1px solid black;
+}
+
+.nav-content > ul > li {
+    display: inline-block;
+    position: relative;
+    padding: 20px;
+}
+
+.nav-content > ul > li:hover {
+    text-decoration: underline 2px white;
+}
+
+.drop {
+    display: none;
+    position: absolute;
+    background-color: #F8DE7E;
+}
+
+.nav-content > ul > li:hover .drop {
+    display: block;
+    width: 100px;
+    border: 1px solid black;
+    border-top: none;
+    margin-left: -5px;
+}
+
+.nav-content > ul > li .drop li {
+    padding: 10px;
+}
+
+.nav-content > ul > li .drop li:hover {
+    text-decoration: underline 2px white;
+}
+
+@media only screen and (max-width: 965px) {
+    .whitespace {
+        display: none;
+    }
+
+    .nav-container-2 {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 539px) {
+    .user-container {
+        margin-bottom: 10px;
+    }
+
+    .nav-container-2 {
+        margin-top: 105px;
+        justify-content: center;
+    }
+}
